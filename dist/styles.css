@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #022b3a;
+}
+.navbar-brand {
+  font-size: 30px;
+  color: #bfdbf7;
+}
+
+body {
+  background-color: #bfdbf7;
+}
+.card-header {
+  color: #ffffff;
+  background-color: #022b3a;
+}
+
+.list-group-item {
+  background-color: #d4daed;
+}

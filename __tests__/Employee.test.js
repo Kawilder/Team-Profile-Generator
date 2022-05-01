@@ -13,18 +13,18 @@ test('looks for name using getName()', () => {
 });
 
 test('looks for id using getId()', () => {
-  const employee = new Employee('Wilder', 1);
-  expect(employee.getId()).toBe(1);
+  const employee = new Employee('Wilder', 4);
+  expect(employee.getId()).toBe(4);
 });
 
 test('looks for email using getEmail()', () => {
-  const employee = new Employee('Wilder', 1, 'wilder@email.com');
+  const employee = new Employee('Wilder', 4, 'wilder@email.com');
   expect(employee.getEmail()).toBe('wilder@email.com');
   const emailPattern = expect.stringMatching(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/); 
   expect(employee.getEmail()).toEqual(emailPattern);
 });
 
 test('looks for role using getRole()', () => {
-  const employee = new Employee('Wilder', 1, 'wilder@email.com');
+  const employee = new Employee('Wilder', 4, 'wilder@email.com');
   expect(employee.getRole()).toBe('Employee');  
 });

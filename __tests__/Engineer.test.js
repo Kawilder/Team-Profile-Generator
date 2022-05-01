@@ -10,11 +10,11 @@ test('Engineer should have name, id, email, and a github', () => {
 })
 
 test('looks for GitHub username property using getGithub() function', () => {
-  const engineer = new Engineer('Udvig', 1, 'udvig@email.com', 'github');
+  const engineer = new Engineer('Udvig', 2, 'udvig@email.com', 'github');
   expect(engineer.getGithub()).toEqual(expect.any(String));  
 })
 
 test('looks for role using getRole()', () => {
-  const engineer = new Engineer('Udvig', 1, 'udvig@email.com', 'githubUsername');
+  const engineer = new Engineer('Udvig', 2, 'udvig@email.com', 'githubUsername');
   expect(engineer.getRole()).toBe('Engineer');  
 });

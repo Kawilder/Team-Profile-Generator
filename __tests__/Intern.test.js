@@ -9,11 +9,11 @@ test('Intern should have name, id, email, and school', () => {
 });
   
 test('looks for school using getSchool()', () => {
-  const intern = new Intern('Addington', 1, 'addingtion@email.com', 'schoolName');
+  const intern = new Intern('Addington', 3, 'addingtion@email.com', 'schoolName');
   expect(intern.getSchool()).toEqual(expect.any(String));
 });
 
 test('looks for role using getRole()', () => {
-  const intern = new Intern('Addington', 1, 'addington@email.com', 'schoolName');
+  const intern = new Intern('Addington', 3, 'addington@email.com', 'schoolName');
   expect(intern.getRole()).toBe('Intern');  
 });

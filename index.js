@@ -6,7 +6,7 @@ const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const jest = require("jest");
 const fs = require("fs");
-const generateHTML = require("./util/generateHtml");
+const generateHTML = require("./utils/generateHtml");
 // empty team array 
 let team = [];
 // promts for new team members
@@ -79,7 +79,7 @@ function newTeamMember() {
 }
 
 function makeHtml(str) {
-  fs.writeFile("./sample-css/index.html", str, (err) => {
+  fs.writeFile("./dist/index.html", str, (err) => {
     if (err) throw err;
     console.log("HTML file generated");
   });
